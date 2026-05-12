@@ -2,19 +2,16 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Synapse-AI
 
-This contains everything you need to run your app locally.
+Google AI Studio ile geliştirilmiş; kullanıcı etkileşimini merkeze alarak dijital metin yönetimi ve günlük planlama süreçlerinde yardımcı olmayı amaçlayan akıllı asistan platformu.
 
-View your app in AI Studio: https://ai.studio/apps/57cac302-347e-4ca7-a09c-b8d7a41e55ee
+[Uygulamayı AI Studio'da Görüntüle](https://ai.studio/apps/57cac302-347e-4ca7-a09c-b8d7a41e55ee)
 
-## Run Locally
+##  Yerel Kurulum ve Çalıştırma
 
-**Prerequisites:**  Node.js
+**Ön Koşullar:** Node.js yüklü olmalıdır.
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. **Bağımlılıkları yükleyin:**
+   ```bash
+   npm install

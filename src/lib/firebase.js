@@ -1,18 +1,15 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth"; // Kimlik doğrulama için gerekli
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDy59tpalbYM8nD3mYuUKswueSIilHJB2c",
-  authDomain: "synapse-91b16.firebaseapp.com",
-  projectId: "synapse-91b16",
-  storageBucket: "synapse-91b16.firebasestorage.app",
-  messagingSenderId: "126499449426",
-  appId: "1:126499449426:web:b93c05ea9fdf62f9be0d8b",
-  measurementId: "G-XSTD5LJK40"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
-// Firebase'i başlat
 const app = initializeApp(firebaseConfig);
-
-// Diğer dosyalarda kullanabilmek için auth'u dışarı aktar
 export const auth = getAuth(app);
